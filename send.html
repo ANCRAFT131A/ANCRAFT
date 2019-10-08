@@ -2,10 +2,8 @@
 <html>
 <body>
 <div class="ANCRAFTGUI" >
-<div class="ANCRAFTIFRAME" >
-<IFRAME ID="AIFRAME" WIDTH=350 HEIGHT=500 MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0 SCROLLING=no 
-SRC='https://widgetbot.io/embed/248342710073819136/248356495731851275/1101/?bu=進入聊天室&bl=people in this guild'></IFRAME>
-</div>
+<h3>webhook連結</h3>
+<input class="input" id="webhook" type="text" placeholder="url"></br>
 <h3>頭貼</h3>
 <input class="input" id="avataricon" type="text" placeholder="url"></br>
 <h3>名稱</h3>
@@ -26,7 +24,7 @@ SRC='https://widgetbot.io/embed/248342710073819136/248356495731851275/1101/?bu=�
 function send() {
 //onclick.start
 
-var url = "https://discordapp.com/api/webhooks/368744156853698581/m326zfLfxWvrx_xwLL4n2zXmYLUcfPB1Dvw2sMcKNCIsOw2LHoDqkaQJ_ojt60b0bc55" + '/slack';
+var url = document.getElementById('webhook').value + '/slack';
 //HttpRequest url
 
 var REQUESTJSON = {
