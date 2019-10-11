@@ -24,7 +24,7 @@
 <script>
 document.onkeydown = function (A) {
     var keyCode = A.keyCode;
-    if(keyCode == 13) {
+    if(keyCode == 13 && !evt.shiftKey) {
         send();
     }
 };
